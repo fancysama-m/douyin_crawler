@@ -146,29 +146,13 @@ def spider(text, num, cookie, uifid, msToken, a_bogus):
                         '下载量': download_count,
                         '转发量': share_count
                     })
-                # result.append({
-                #     '视频id': aweme_id,
-                #     '链接': link,
-                #     '标题': desc,
-                #     '创建时间': create_time,
-                #     '创作者id': author_uid,
-                #     '创作者昵称': nickname,
-                #     '认证': enterprise_verify_reason,
-                #     '收藏量': collect_count,
-                #     '评论量': comment_count,
-                #     '点赞量': digg_count,
-                #     '下载量': download_count,
-                #     '转发量': share_count
-                # })
+
                 print(f"已爬取第 {index} 条数据", aweme_id, link, desc, create_time, author_uid, nickname,
                       enterprise_verify_reason, collect_count, comment_count, digg_count, download_count, share_count)
                 index += 1
         time.sleep(2)
 
-    #     # 将结果转换为 DataFrame
-    # df = pd.DataFrame(result)
-    # # 将 DataFrame 保存为 CSV 文件
-    # df.to_csv('douyin_data.csv',  index=False)
+ 
 
 
 if __name__ == '__main__':
